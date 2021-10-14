@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+    <ImageView
+        android:id="@+id/reg_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/regbg"
+        />
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:background="@drawable/edittext_background"
+        android:padding="13dp"
+        android:elevation="3dp"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+
+        />
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/edittext_background"
+        android:padding="13dp"
+        android:elevation="3dp"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/account"
+        />
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="13dp"
+        android:elevation="3dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/keylog"
+        />
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sing Up"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#3DC516"
+        android:padding="14dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:text="Already has an account?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:id="@+id/signin_text"
+            android:layout_marginLeft="260dp"
+            android:textColor="@color/purple_700"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
